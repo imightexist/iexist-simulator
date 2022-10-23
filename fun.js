@@ -9,7 +9,7 @@ client.login(token);
 client.on("messageCreate", function(message) {
   if (message.author.bot) return;
   random = Math.floor(Math.random() * 3)
-  if (message == "can you advertise github page for this repo uwu"){
+  if (message.content == "can you advertise github page for this repo uwu"){
     message.reply("https://github.com/imightexist/iexist-simulator")
   }else{
     if (random == 0){
